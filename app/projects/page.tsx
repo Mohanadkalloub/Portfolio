@@ -22,12 +22,11 @@ export default function Projects() {
             rel="noopener noreferrer"
             className="mb-4 block"
           >
-            <h3 className="font-semibold text-xl mb-2 text-gray-900 dark:text-white">
+            <h3 className="font-semibold text-xl mb-2 text-gray-900 ">
               {project.name}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300">
-              {project.description}
-            </p>
+            <p className="text-gray-600 ">{project.description}</p>
+            <p className="text-gray-600">{project.stack}</p>
           </Link>
 
           {project.code && (
