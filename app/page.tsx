@@ -38,35 +38,35 @@ export default function Home() {
         <h3 className="text-3xl font-bold mb-10">What I Do</h3>
 
         <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-6 border rounded-xl bg-white dark:bg-gray-800">
+          <div className="p-6 border rounded-xl bg-white ">
             <h4 className="text-xl font-semibold mb-2 dark:text-white">
               Frontend Development
             </h4>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600 ">
               Building modern, fast, and responsive user interfaces.
             </p>
           </div>
 
-          <div className="p-6 border rounded-xl bg-white dark:bg-gray-800">
+          <div className="p-6 border rounded-xl bg-white ">
             <h4 className="text-xl font-semibold mb-2">React & Next.js</h4>
             <p className="text-gray-600 dark:text-gray-300">
               Creating scalable applications using best practices.
             </p>
           </div>
-          <div className="p-6 border rounded-xl bg-white dark:bg-gray-800">
+          <div className="p-6 border rounded-xl bg-white">
             <h4 className="text-xl font-semibold mb-2">
               Mobile Development (React Native)
             </h4>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600 ">
               Building cross-platform mobile applications using React Native
               with a focus on performance, usability, and scalable architecture.
             </p>
           </div>
-          <div className="p-6 border rounded-xl bg-white dark:bg-gray-800">
+          <div className="p-6 border rounded-xl bg-white">
             <h4 className="text-xl font-semibold mb-2">
               Back End Development (Node.js)
             </h4>
-            <p className="text-gray-600 dark:text-gray-300">
+            <p className="text-gray-600 ">
               Building scalable and robust server-side applications using
               Node.js, focusing on APIs, database integration, and server
               performance.

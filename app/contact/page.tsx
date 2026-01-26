@@ -31,7 +31,7 @@ export default function ContactPage() {
   };
 
   return (
-    <section className="max-w-xl mx-auto bg-white">
+    <section className="max-w-xl mx-auto">
       <div className="mb-5">
         <h2 className="text-center text-2xl md:text-5xl font-bold mb-4">
           Contact Me
