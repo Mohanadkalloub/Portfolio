@@ -50,4 +50,11 @@ export const projects: IProjects[] = [
     href: "",
     code: "https://github.com/Mohanadkalloub/Coffee_Mobile_App",
   },
+  {
+    id: 7,
+    name: "Card State Management",
+    description: "",
+    href: "https://card-grid-eight.vercel.app/",
+    code: "https://github.com/Mohanadkalloub/Expandable-Card-with-State-Management",
+  },
 ];
