@@ -18,7 +18,7 @@ export default function Home() {
           experience.
         </p>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 flex-wrap">
           <Link
             href="/projects"
             className="px-6 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
@@ -37,36 +37,41 @@ export default function Home() {
       <section className="mt-24">
         <h3 className="text-3xl font-bold mb-10">What I Do</h3>
 
-        <div className="grid md:grid-cols-3 gap-6">
-          <div className="p-6 border rounded-xl bg-white ">
+        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="p-6 rounded-xl border bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
             <h4 className="text-xl font-semibold mb-2 dark:text-white">
               Frontend Development
             </h4>
-            <p className="text-gray-600 ">
+            <p className="text-gray-600 dark:text-gray-300">
               Building modern, fast, and responsive user interfaces.
             </p>
           </div>
 
-          <div className="p-6 border rounded-xl bg-white ">
-            <h4 className="text-xl font-semibold mb-2">React & Next.js</h4>
+          <div className="p-6 rounded-xl border bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
+            <h4 className="text-xl font-semibold mb-2 dark:text-white">
+              React & Next.js
+            </h4>
             <p className="text-gray-600 dark:text-gray-300">
               Creating scalable applications using best practices.
             </p>
           </div>
-          <div className="p-6 border rounded-xl bg-white">
-            <h4 className="text-xl font-semibold mb-2">
+
+          <div className="p-6 rounded-xl border bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
+            <h4 className="text-xl font-semibold mb-2 dark:text-white">
               Mobile Development (React Native)
             </h4>
-            <p className="text-gray-600 ">
+            <p className="text-gray-600 dark:text-gray-300">
               Building cross-platform mobile applications using React Native
               with a focus on performance, usability, and scalable architecture.
             </p>
           </div>
-          <div className="p-6 border rounded-xl bg-white">
-            <h4 className="text-xl font-semibold mb-2">
+
+          {/* Card */}
+          <div className="p-6 rounded-xl border bg-white dark:bg-gray-900 border-gray-200 dark:border-gray-700">
+            <h4 className="text-xl font-semibold mb-2 dark:text-white">
               Back End Development (Node.js)
             </h4>
-            <p className="text-gray-600 ">
+            <p className="text-gray-600 dark:text-gray-300">
               Building scalable and robust server-side applications using
               Node.js, focusing on APIs, database integration, and server
               performance.
@@ -93,7 +98,9 @@ export default function Home() {
           ].map((tech) => (
             <span
               key={tech}
-              className="px-4 py-2 bg-blue-100 dark:bg-blue-700 text-blue-800 dark:text-blue-100 rounded-full text-sm font-medium"
+              className="px-4 py-2 rounded-full text-sm font-medium
+              bg-blue-100 text-blue-800
+              dark:bg-blue-900 dark:text-blue-100"
             >
               {tech}
             </span>
