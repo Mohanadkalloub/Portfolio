@@ -11,7 +11,7 @@ import {
 
 export default function About() {
   return (
-    <section className="flex flex-col-reverse md:flex-row items-center gap-10 px-4 md:px-0">
+    <section className="mt-[50] flex flex-col-reverse md:flex-row items-center gap-10 px-4 md:px-0">
       <div className="w-full md:w-1/2 text-center md:text-left">
         <h2 className="font-semibold text-base md:text-lg lg:text-xl leading-relaxed">
           I’m a Full-Stack and Mobile Developer with over 3 years of experience
@@ -74,14 +74,15 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-full md:w-1/2 flex justify-center">
-        <Image
-          src="/images/me.png"
-          alt="Mohanad Kalloub"
-          width={350}
-          height={350}
-          className="rounded-lg object-cover shadow-lg"
-        />
+      <div className="w-full md:w-1/2 flex justify-center md:justify-end">
+        <div className="w-64 h-64 md:w-80 md:h-80 relative">
+          <Image
+            src="/images/me.png"
+            alt="Mohanad Kalloub"
+            fill
+            className="rounded-full object-cover shadow-lg"
+          />
+        </div>
       </div>
     </section>
   );
