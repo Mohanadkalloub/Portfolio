@@ -1,7 +1,7 @@
 import { projects } from "@/data/data";
 import Link from "next/link";
 
-export default function Projects() {
+export default function Templates() {
   return (
     <section className="flex flex-wrap gap-6">
       {projects.map((project) => (
