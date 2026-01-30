@@ -24,7 +24,7 @@ export default function Home() {
           </div>
 
           <div className="p-6 border rounded-xl">
-            <h4 className="text-xl font-semibold mb-2">
+            <h4 className="text-xl font-semibold mb-2">der
               Business Dashboards & Internal Tools
             </h4>
             <p className="text-gray-600 dark:text-gray-300">

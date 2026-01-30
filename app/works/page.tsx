@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { apps } from "@/data/data";
 
-export default function Work() {
+export default function Works() {
   return (
     <main className="max-w-6xl mx-auto px-6 py-24">
       <div className="mb-16">

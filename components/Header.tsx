@@ -44,13 +44,13 @@ export default function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/work" onClick={() => setOpen(false)}>
-              Work
+            <Link href="/works" onClick={() => setOpen(false)}>
+              Works
             </Link>
           </li>
           <li>
-            <Link href="/projects" onClick={() => setOpen(false)}>
-              Projects
+            <Link href="/templates" onClick={() => setOpen(false)}>
+              Templates
             </Link>
           </li>
           <li>
