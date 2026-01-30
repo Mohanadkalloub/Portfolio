@@ -14,7 +14,7 @@ export default function Header() {
         </Link>
 
         <ul className="hidden md:flex gap-6 text-sm font-medium">
-          {["Home", "About", "Work", "Projects", "Contact"].map((item) => (
+          {["Home", "About", "Works", "Templates", "Contact"].map((item) => (
             <li key={item}>
               <Link
                 href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
