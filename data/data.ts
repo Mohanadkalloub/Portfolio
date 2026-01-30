@@ -72,3 +72,65 @@ export const projects: IProjects[] = [
     code: "https://github.com/Mohanadkalloub/Expandable-Card-with-State-Management",
   },
 ];
+
+export interface IApp {
+  title: string;
+  description: string;
+  href: string;
+  status: string;
+  problem: string;
+  solution: string;
+  features: string[];
+}
+
+export const apps: IApp[] = [
+  {
+    title: "Business Dashboard",
+    description:
+      "Role-based dashboard with live data, CRUD operations, and real-time UI updates.",
+    href: "https://dashbaordapp.vercel.app/",
+    status: "Live Demo",
+    problem:
+      "Small businesses struggle to track products and team activity efficiently.",
+    solution:
+      "A real-time dashboard that shows products, status, and team activity in one place.",
+    features: [
+      "Add/Edit/Delete Products",
+      "Track Active/Inactive status",
+      "Real-time Stats cards",
+      "Clean and responsive UI",
+    ],
+  },
+  {
+    title: "Booking System",
+    description:
+      "Scheduling system with availability, user booking flow, and admin approvals.",
+    href: "https://mohanadbooking.vercel.app/",
+    status: "Live Demo",
+    problem: "Managing bookings manually is error-prone and slow.",
+    solution:
+      "An automated booking system with user-friendly interface and admin approvals.",
+    features: [
+      "Calendar view with availability",
+      "User booking workflow",
+      "Admin approval system",
+      "Notifications for users",
+    ],
+  },
+  {
+    title: "Workflow Tool",
+    description:
+      "Internal tool to manage requests, statuses, and team collaboration.",
+    href: "https://work-flow-app.vercel.app/",
+    status: "Live Demo",
+    problem: "Teams lose track of requests and status updates.",
+    solution:
+      "A tool that manages internal requests, task statuses, and team collaboration.",
+    features: [
+      "Request tracking dashboard",
+      "Status updates per task",
+      "Team assignments & roles",
+      "Clean interface with filtering",
+    ],
+  },
+];

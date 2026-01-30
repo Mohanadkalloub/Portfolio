@@ -14,7 +14,7 @@ export default function Header() {
         </Link>
 
         <ul className="hidden md:flex gap-6 text-sm font-medium">
-          {["Home", "About", "Projects", "Contact"].map((item) => (
+          {["Home", "About", "Work", "Projects", "Contact"].map((item) => (
             <li key={item}>
               <Link
                 href={item === "Home" ? "/" : `/${item.toLowerCase()}`}
@@ -41,6 +41,11 @@ export default function Header() {
           <li>
             <Link href="/about" onClick={() => setOpen(false)}>
               About
+            </Link>
+          </li>
+          <li>
+            <Link href="/work" onClick={() => setOpen(false)}>
+              Work
             </Link>
           </li>
           <li>
