@@ -53,7 +53,7 @@ export default function Home() {
           get from templates.
         </p>
         <Link
-          href="/work"
+          href="/works"
           className="inline-block px-8 py-3 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition"
         >
           View real applications
