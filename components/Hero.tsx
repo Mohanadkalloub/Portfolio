@@ -12,7 +12,7 @@ export default function Hero() {
         </p>
 
         <a
-          href="/work"
+          href="/works"
           className="inline-block bg-white text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
         >
           View my work
