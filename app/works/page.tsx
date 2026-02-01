@@ -21,10 +21,10 @@ export default function Works() {
             className="border rounded-2xl p-8 hover:shadow-lg transition flex flex-col gap-6"
           >
             <h2 className="text-2xl font-semibold mb-3">{app.title}</h2>
-            <span className="inline-block text-sm font-medium px-3 py-1 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900 dark:text-blue-200 mb-4">
-              {app.status}
-            </span>
 
+            <h1 className="w-40 text-1xl bg-blue-200 rounded-md text-center text-gray-700">
+              {app.status}
+            </h1>
             <div className="mb-4">
               <p className="font-semibold text-gray-700 dark:text-gray-300">
                 Problem:
