@@ -1,18 +1,19 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Inter, Fira_Code } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const fira = Fira_Code({
   subsets: ["latin"],
+  variable: "--font-fira",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export const metadata: Metadata = {
     default: "Mohanad Kalloub",
     template: "%s | Mohanad Kalloub",
   },
-  description: "Full Stack Developer – Portfolio of Mohanad Kalloub",
+  description: "Frontend & Mobile Developer – React, Next.js, React Native",
   icons: {
     icon: "/favicon.ico",
   },
@@ -34,7 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col bg-background text-foreground`}
+        className={`${inter.variable} ${fira.variable} antialiased min-h-screen flex flex-col bg-background text-foreground font-sans`}
       >
         <Header />
         <main className="grow container mx-auto px-6 py-10">{children}</main>
