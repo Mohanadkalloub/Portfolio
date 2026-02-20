@@ -26,7 +26,7 @@ export default function Header() {
   return (
     <header className="border-b">
       <nav className="container mx-auto flex items-center justify-between px-6 py-4">
-        <Link href="/" className="text-xl font-bold">
+        <Link href="/" className="text-xl font-bold text-blue-500">
           Mohanad Kalloub<span className="text-primary">.</span>
         </Link>
 
