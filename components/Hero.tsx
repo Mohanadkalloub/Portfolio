@@ -35,7 +35,7 @@ export default function Hero() {
         </div>
         <div className="flex justify-center">
           <img
-            src="/images/me_home.jpeg"
+            src="/images/01.png"
             alt="Frontend and Mobile Developer"
             className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
           />
