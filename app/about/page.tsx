@@ -81,7 +81,7 @@ export default function About() {
         </div>
         <div className="mt-6 flex justify-center md:justify-start">
           <Link
-            href="/https://docs.google.com/document/d/1vZTp4UmyyPTOtFYKOmcexpvyocYykLdooXhT2yfw51k/edit?usp=sharing"
+            href="https://docs.google.com/document/d/1vZTp4UmyyPTOtFYKOmcexpvyocYykLdooXhT2yfw51k/edit?usp=sharing"
             target="_blank"
             className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-600 dark:bg-blue-600 dark:hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition"
           >
