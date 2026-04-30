@@ -1,46 +1,29 @@
-export default function Hero() {
-  return (
-    <section className="rounded-lg min-h-screen flex items-center justify-center bg-black text-white px-6">
-      <div className="max-w-5xl grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-        <div className="space-y-6 text-center md:text-left">
-          <h1 className="text-4xl md:text-3xl font-bold leading-tight">
-            Frontend & Mobile App Developer
-          </h1>
-          <p className="text-lg text-gray-300">
-            I build real, production-ready web and mobile applications using
-            <span className="text-white font-semibold"> React.js</span>,
-            <span className="text-white font-semibold"> Next.js</span>,
-            <span className="text-white font-semibold"> React Native</span>, and
-            <span className="text-white font-semibold"> TypeScript</span>.
-            <br />I focus on clean architecture, smooth user experiences, and
-            solving real business problems — not demo or template-based
-            projects.
-          </p>
+<div className="space-y-6">
+  <h2 className="font-semibold text-base md:text-lg lg:text-xl leading-relaxed">
+    I&apos;m Mohanad Kallou — a Frontend-Focused Full-Stack Developer with 5+
+    years of experience building scalable, high-performance web and mobile
+    applications.
+  </h2>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-            <a
-              href="/works"
-              className="inline-flex items-center justify-center bg-white text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
-            >
-              View my work
-            </a>
+  <p className="text-base md:text-lg leading-relaxed">
+    I specialize in React.js, Next.js, and React Native with Expo for
+    cross-platform mobile, backed by solid full-stack experience with Node.js,
+    NestJS, REST APIs, and GraphQL. My stack also includes TypeScript, Redux
+    Toolkit, React Query, and AWS — covering everything from pixel-perfect UIs
+    to complete end-to-end products.
+  </p>
 
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center border border-white text-white px-6 py-3 rounded-xl font-semibold hover:bg-white hover:text-black transition"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
-        <div className="flex justify-center">
-          <img
-            src="/images/01.png"
-            alt="Frontend and Mobile Developer"
-            className="w-64 h-64 md:w-80 md:h-80 object-cover rounded-2xl shadow-lg"
-          />
-        </div>
-      </div>
-    </section>
-  );
-}
+  <p className="text-base md:text-lg leading-relaxed">
+    I&apos;ve worked with startups and remote teams to design, build, and launch
+    production-ready products across ecommerce, healthcare, and education
+    platforms. My work involves building complex UI systems, real-time features
+    (WebRTC, WebSockets), and optimizing performance to deliver seamless user
+    experiences.
+  </p>
+
+  <p className="text-base md:text-lg leading-relaxed">
+    I also leverage AI-powered workflows to improve code quality and speed up
+    delivery — always focused on clean architecture, scalable code, and shipping
+    products that make a real impact.
+  </p>
+</div>;
