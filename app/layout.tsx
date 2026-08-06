@@ -10,7 +10,8 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Mohanad Kalloub",
-  description: "Frontend-Focused Full-Stack Developer — React, Next.js, React Native",
+  description:
+    "Mohanad Kalloub — Full Stack Developer with experience in Supply Chain, Logistics & Operations, Information Management, and Coordination. Open to remote & local work. Based in Gaza.",
   icons: {
     icon: "/favicon.ico",
   },
