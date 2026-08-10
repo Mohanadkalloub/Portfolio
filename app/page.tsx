@@ -24,16 +24,15 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    role: "Supply Chain, Operations & Logistics · Information Management · Communication & Coordination",
+    role: "Full Stack Developer (React & Django)",
     company: "Self-Employed",
     type: "Self-employed",
-    period: "Jan 2024 – Present · 2 yrs 8 mos",
-    location: "Gaza · On-site",
+    period: "Jan 2026 – Present · 8 mos",
+    location: "Remote",
     bullets: [
-      "Supply Chain — Sourced and supplied goods to local organizations, managing the full cycle from purchasing to delivery under constant shortages and price volatility.",
-      "Operations & Logistics — Planned and executed deliveries across disrupted routes, adjusting daily as access and availability changed, while maintaining accurate inventory and goods records.",
-      "Information Management — Handled data entry, archiving, and record verification alongside a small team, keeping information accurate and retrievable for decisions.",
-      "Communication & Coordination — Coordinated between suppliers, clients, and partner organizations in Arabic and English to keep commitments met despite frequent disruptions.",
+      "Building a full-stack task management platform end to end for a client using React, Express, and MongoDB, owning features from architecture through deployment with a focus on clean architecture and reusable components.",
+      "Designed and implemented a secure authentication system — signup/login and secure session handling.",
+      "Built RESTful APIs with Node.js and Express, focusing on secure API design, maintainability, and efficient client-server data communication.",
     ],
   },
   {
@@ -128,9 +127,9 @@ export default function Home() {
           Mohanad Kalloub
         </h1>
         <p className="mt-3 text-balance text-base text-blue-600 dark:text-blue-400">
-          Full Stack Developer · Supply Chain, Logistics &amp; Operations ·
-          Information Management · Coordination &amp; Communication · Open to
-          Remote &amp; Local Work
+          Full-Stack Software Engineer · React, Node.js &amp; Python ·
+          Real-Time &amp; Event-Driven Systems · REST APIs, WebSockets &amp; AWS
+          · Open to Remote Work
         </p>
       </section>
 
@@ -140,35 +139,48 @@ export default function Home() {
           About
         </h2>
         <p className="mt-4 leading-relaxed text-gray-600 dark:text-gray-300">
-          I&apos;m Mohanad. What I do — with precision and high performance:
+          I&apos;m Mohanad — a Full-Stack Software Engineer building
+          high-performance web and mobile applications with a focus on clean
+          architecture, real-time systems, and scalable solutions.
         </p>
         <ul className="mt-4 space-y-3 leading-relaxed text-gray-600 dark:text-gray-300">
           <li className="flex gap-3">
             <span aria-hidden>✅</span>
             <span>
-              3+ years building web and mobile applications with React, Next.js,
-              React Native, Node.js, TypeScript, and AI.
+              4+ years building web &amp; mobile applications with React,
+              Next.js, React Native, Node.js, Python, TypeScript &amp; AI
+              integrations.
             </span>
           </li>
           <li className="flex gap-3">
             <span aria-hidden>✅</span>
             <span>
-              2+ years in Supply Chain, Logistics &amp; Operations · Information
-              Management · Coordination &amp; Communication.
+              Experienced in REST APIs, WebSockets, authentication, event-driven
+              systems, databases, and production deployments.
             </span>
           </li>
           <li className="flex gap-3">
             <span aria-hidden>✅</span>
-            <span>Fluent in both Arabic and English.</span>
+            <span>Fluent in Arabic and English.</span>
           </li>
           <li className="flex gap-3">
             <span aria-hidden>✅</span>
             <span>
-              Available for remote work with 24/7 electricity and internet — and
-              for local work with international organizations. Based in Gaza.
+              Fully set up for remote work with 24/7 electricity, stable
+              high-speed internet, and a reliable workspace.
+            </span>
+          </li>
+          <li className="flex gap-3">
+            <span aria-hidden>✅</span>
+            <span>
+              Remote contractor setup through RemotePass for smooth payments and
+              onboarding.
             </span>
           </li>
         </ul>
+        <p className="mt-4 text-sm text-gray-500 dark:text-gray-400">
+          📍 Based in Gaza · Available for remote opportunities
+        </p>
       </section>
 
       {/* Experience */}
