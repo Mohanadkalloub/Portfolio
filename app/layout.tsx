@@ -1,17 +1,18 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Barlow } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
+const barlow = Barlow({
   subsets: ["latin"],
-  variable: "--font-inter",
+  weight: ["300", "400", "500", "600"],
+  variable: "--font-barlow",
   display: "swap",
 });
 
 export const metadata: Metadata = {
   title: "Mohanad Kalloub",
   description:
-    "Mohanad Kalloub — Full Stack Developer with experience in Supply Chain, Logistics & Operations, Information Management, and Coordination. Open to remote & local work. Based in Gaza.",
+    "Mohanad Kalloub — Full-Stack Software Engineer building production web and mobile products end to end. Real-time & event-driven systems, REST APIs, WebSockets and CI/CD. Open to remote work.",
   icons: {
     icon: "/favicon.ico",
   },
@@ -25,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} antialiased min-h-screen bg-background text-foreground font-sans`}
+        className={`${barlow.variable} antialiased`}
       >
         {children}
       </body>
