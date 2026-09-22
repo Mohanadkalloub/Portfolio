@@ -12,7 +12,7 @@ const barlow = Barlow({
 export const metadata: Metadata = {
   title: "Mohanad Kalloub",
   description:
-    "Mohanad Kalloub — Full-Stack Software Engineer building production web and mobile products end to end. Real-time & event-driven systems, REST APIs, WebSockets and CI/CD. Open to remote work.",
+    "Mohanad Kalloub — Full-Stack Software Engineer with 5+ years building production web and mobile products end to end. Node.js, NestJS, Prisma and PostgreSQL, React and Next.js, Docker and CI/CD to AWS. Open to remote work.",
   icons: {
     icon: "/favicon.ico",
   },

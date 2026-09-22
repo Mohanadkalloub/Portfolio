@@ -16,16 +16,16 @@ const ABOUT_PHOTO = "/images/01.png";
 type Page = "home" | "about" | "contact";
 
 const stats = [
-  { value: "4+", label: "Years shipping production apps" },
+  { value: "5+", label: "Years shipping production apps" },
   { value: "100+", label: "Web & mobile screens delivered" },
   { value: "4", label: "Payment providers integrated" },
-  { value: "24/7", label: "Remote availability, solar backed" },
+  { value: "24/7", label: "Remote availability, power & internet" },
 ];
 
 const services = [
   {
     title: "Full-stack development",
-    body: "React, Next.js and React Native on the front; FastAPI, Node.js, Express and NestJS behind them, with Prisma over PostgreSQL. REST API design, role-based access and secure session management.",
+    body: "Node.js and NestJS behind React, Next.js, Angular and React Native, with Prisma over PostgreSQL. Scalable REST API design, modular architecture, dependency injection, role-based access and secure session management.",
   },
   {
     title: "Real-time & event-driven",
@@ -33,7 +33,7 @@ const services = [
   },
   {
     title: "DevOps & delivery",
-    body: "Docker, CI/CD pipelines, AWS (S3, CloudFront), Linux, DNS and HTTPS/SSL — plus Jest and Cypress coverage from unit to end to end.",
+    body: "Docker, GitHub Actions CI/CD, AWS (S3, CloudFront), Linux, DNS and HTTPS/SSL — plus Jest and Cypress coverage from unit to end to end.",
   },
   {
     title: "Payments & AI services",
@@ -48,7 +48,7 @@ const skills: { group: string; items: string[] }[] = [
   },
   {
     group: "Backend & APIs",
-    items: ["Python (FastAPI)", "Node.js", "Express.js", "NestJS", "REST API design", "Modular architecture", "Dependency injection", "Auth & authorization", "Role-based access", "Secure sessions"],
+    items: ["Node.js", "NestJS", "Express.js", "Python (FastAPI)", "REST API design", "Modular architecture", "Dependency injection", "Auth & authorization", "Role-based access", "Secure sessions"],
   },
   {
     group: "Async & messaging",
@@ -76,7 +76,7 @@ const skills: { group: string; items: string[] }[] = [
   },
   {
     group: "Tooling",
-    items: ["Claude Code", "Cursor", "GitHub Copilot", "Jira", "Figma"],
+    items: ["Claude Code", "Claude Design", "Cursor", "GitHub Copilot", "Jira (Agile/Scrum)", "Figma"],
   },
 ];
 
@@ -96,7 +96,7 @@ const experiences = [
     title: "Full Stack Developer (React Native) · Be Home App",
     bullets: [
       "Enabled real-time data synchronisation across clients using WebSockets and Firebase, significantly increasing engagement.",
-      "Spearheaded development of 20+ mobile screens, improving scalability and user experience.",
+      "Spearheaded development of 20+ mobile screens, designed with Claude Design and built with Claude Code, improving scalability and user experience.",
       "Improved application performance by 30% through Redux Toolkit and component-level optimisations, raising maintainability.",
     ],
   },
@@ -123,6 +123,13 @@ const experiences = [
       "Developed 25+ responsive screens and reusable UI components in React and TypeScript, ensuring type safety and reducing UI bugs across the codebase.",
       "Managed complex application state with Redux Toolkit, improving data consistency across product listings, cart, and user sessions while reducing unnecessary re-renders.",
     ],
+  },
+];
+
+const education = [
+  {
+    period: "Sep 2020 – Jul 2024",
+    title: "B.Sc. Information Technology · Islamic University of Gaza",
   },
 ];
 
@@ -185,7 +192,7 @@ function HomePage({ onContact }: { onContact: () => void }) {
       >
         <div>
           <div className="eyebrow" style={{ marginBottom: 18 }}>
-            Full-Stack Software Engineer · Real-Time &amp; Event-Driven Systems
+            Full-Stack Software Engineer · Node.js &amp; NestJS
           </div>
           <h1
             style={{
@@ -207,11 +214,12 @@ function HomePage({ onContact }: { onContact: () => void }) {
               color: "var(--text-78)",
             }}
           >
-            Full-Stack Software Engineer with over four years owning applications
-            from architecture through implementation, testing, deployment and
-            ongoing improvement. Real-time features over WebSockets, event-driven
-            processing with Celery and RabbitMQ, and containerised deployment with
-            CI/CD. Delivered for clients across the UK and Europe.
+            Full-Stack Engineer with 5+ years owning production web and mobile
+            applications end to end — from backend architecture and database
+            design through frontend implementation and deployment. Scalable REST
+            APIs in Node.js and NestJS with Prisma over PostgreSQL, real-time
+            features over WebSockets, and Docker with GitHub Actions CI/CD to
+            AWS. Delivered for clients across the UK and Europe.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <button type="button" onClick={onContact} className="btn btn-primary">
@@ -298,22 +306,29 @@ function AboutPage() {
         <div>
           <div className="eyebrow">About</div>
           <h1 className="page-title">
-            Full-Stack Software Engineer — real-time &amp; event-driven systems
+            Full-Stack Software Engineer — Node.js &amp; NestJS
           </h1>
           <p className="lead">
-            Full-Stack Engineer with over four years owning production web and
-            mobile applications end to end — architecture, implementation,
-            testing, deployment and ongoing improvement.
+            Full-Stack Engineer with 5+ years owning production web and mobile
+            applications end to end — from backend architecture and database
+            design through frontend implementation and deployment.
           </p>
           <p className="lead">
-            REST APIs in Python (FastAPI) and Node.js, real-time features over
-            WebSockets, event-driven processing with Celery and RabbitMQ, and
-            containerised deployment with CI/CD. Delivered for clients across
-            the UK and Europe.
+            Strong in Node.js and NestJS: scalable REST APIs with modular
+            architecture, Prisma over PostgreSQL, secure authentication,
+            real-time features over WebSockets and event-driven processing,
+            deployed on Docker with GitHub Actions CI/CD to AWS. Frontend in
+            React, Next.js and Angular.
+          </p>
+          <p className="lead">
+            I integrate OpenAI and Anthropic LLM APIs into products and build
+            daily with Claude Code and Claude Design. I work in Agile/Scrum
+            teams, bring product thinking around business and operational
+            needs, and have delivered for clients across the UK and Europe.
           </p>
           <p className="lead" style={{ margin: 0 }}>
-            Fully set up for remote work — solar power and independent internet
-            for 24/7 availability, with payments through RemotePass.
+            Fully set up for remote work — 24/7 electricity and stable internet,
+            with payments through RemotePass.
           </p>
           <div
             style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 24 }}
@@ -397,6 +412,26 @@ function AboutPage() {
         >
           Download CV (PDF)
         </a>
+      </section>
+
+      <section style={{ paddingTop: 72 }}>
+        <SectionLabel>Education</SectionLabel>
+        <div>
+          {education.map((ed) => (
+            <div key={ed.title} className="exp-row">
+              <div className="exp-period">{ed.period}</div>
+              <h3
+                style={{
+                  fontSize: 20,
+                  margin: 0,
+                  letterSpacing: "-0.01em",
+                }}
+              >
+                {ed.title}
+              </h3>
+            </div>
+          ))}
+        </div>
       </section>
 
       <section style={{ paddingTop: 72 }}>
@@ -492,7 +527,7 @@ function ContactPage() {
           }}
         >
           Open to full-stack builds, real-time systems and product engagements.
-          Fully equipped for remote work with independent solar power and
+          Fully equipped for remote work with 24/7 electricity and stable
           internet, and payments handled through RemotePass — onboarding and
           invoicing run like any EU or US-based contractor.
         </p>
