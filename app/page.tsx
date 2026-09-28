@@ -9,7 +9,8 @@ const WHATSAPP = "https://wa.me/972595372607";
 const CALENDLY = "https://calendly.com/mohanadkalloub";
 const GITHUB = "https://github.com/Mohanadkalloub";
 const LINKEDIN = "https://www.linkedin.com/in/mohanadkalloub/";
-const RESUME = "/Mohanad-Kalloub-CV.pdf";
+const RESUME_SOFTWARE = "/Mohanad-Kalloub-CV.pdf";
+const RESUME_OPERATIONS = "/Mohanad-Kalloub-CV-Operations.pdf";
 const HERO_PHOTO = "/images/01.png";
 const ABOUT_PHOTO = "/images/01.png";
 
@@ -85,6 +86,16 @@ const skills: { group: string; items: string[] }[] = [
 ];
 
 const experiences = [
+  {
+    period: "Jan 2024 – Aug 2026",
+    title: "Procurement, Supply Chain & Data Management · Arben",
+    bullets: [
+      "Managed procurement, supply chain, logistics and data activities for local and international organisations in Gaza throughout the emergency, owning the cycle from request through delivery.",
+      "Ran the full procurement cycle: processed purchase requests, sourced suppliers, compared quotations, and followed purchase orders through to delivery and confirmation.",
+      "Maintained procurement, inventory, fleet and asset trackers, ran data quality checks against source documents, and kept audit-ready records and stock reconciliations.",
+      "Collected field monitoring data and prepared regular activity reports, coordinating daily between suppliers, partner organisations and field teams under access, supply and connectivity constraints.",
+    ],
+  },
   {
     period: "Jan 2026 – Aug 2026",
     title: "Full Stack Developer (NestJS) · Taskly",
@@ -228,8 +239,11 @@ function HomePage({ onContact }: { onContact: () => void }) {
             <button type="button" onClick={onContact} className="btn btn-primary">
               Get in touch
             </button>
-            <a href={RESUME} className="btn btn-secondary" download>
-              Download CV
+            <a href={RESUME_SOFTWARE} className="btn btn-secondary" download>
+              Software CV
+            </a>
+            <a href={RESUME_OPERATIONS} className="btn btn-secondary" download>
+              Operations CV
             </a>
           </div>
         </div>
@@ -420,14 +434,14 @@ function AboutPage() {
             </div>
           ))}
         </div>
-        <a
-          href={RESUME}
-          className="btn btn-secondary"
-          style={{ marginTop: 28 }}
-          download
-        >
-          Download CV (PDF)
-        </a>
+        <div style={{ display: "flex", gap: 12, flexWrap: "wrap", marginTop: 28 }}>
+          <a href={RESUME_SOFTWARE} className="btn btn-secondary" download>
+            Software CV (PDF)
+          </a>
+          <a href={RESUME_OPERATIONS} className="btn btn-secondary" download>
+            Operations CV (PDF)
+          </a>
+        </div>
       </section>
 
       <section style={{ paddingTop: 72 }}>
