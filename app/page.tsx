@@ -8,7 +8,7 @@ const PHONE_DISPLAY = "+972-595372607";
 const WHATSAPP = "https://wa.me/972595372607";
 const CALENDLY = "https://calendly.com/mohanadkalloub";
 const GITHUB = "https://github.com/Mohanadkalloub";
-const LINKEDIN = "https://www.linkedin.com/in/mohanad-kalloub-17ba35223/";
+const LINKEDIN = "https://www.linkedin.com/in/mohanadkalloub/";
 const RESUME = "/Mohanad-Kalloub-CV.pdf";
 const HERO_PHOTO = "/images/01.png";
 const ABOUT_PHOTO = "/images/01.png";
@@ -19,25 +19,25 @@ const stats = [
   { value: "5+", label: "Years shipping production apps" },
   { value: "100+", label: "Web & mobile screens delivered" },
   { value: "4", label: "Payment providers integrated" },
-  { value: "24/7", label: "Remote availability, power & internet" },
+  { value: "24/7", label: "Solar power & high-speed internet" },
 ];
 
 const services = [
   {
     title: "Full-stack development",
-    body: "Node.js and NestJS behind React, Next.js, Angular and React Native, with Prisma over PostgreSQL. Scalable REST API design, modular architecture, dependency injection, role-based access and secure session management.",
+    body: "React, Next.js and React Native on the front end, with Node.js, Express, NestJS and TypeScript over MongoDB and PostgreSQL. REST APIs, secure authentication and clean, modular architecture.",
   },
   {
-    title: "Real-time & event-driven",
-    body: "Real-time features over WebSockets, background processing with Celery and RabbitMQ, and event-driven architecture that holds up under load.",
+    title: "AI-powered products",
+    body: "LLM features built on OpenAI and Anthropic APIs and wired into real application workflows. I ship daily with Claude Code and Cursor to move faster without compromising quality.",
   },
   {
-    title: "DevOps & delivery",
-    body: "Docker, GitHub Actions CI/CD, AWS (S3, CloudFront), Linux, DNS and HTTPS/SSL — plus Jest and Cypress coverage from unit to end to end.",
+    title: "Real-time & delivery",
+    body: "Real-time features over WebSockets, multi-provider payments with Stripe and PayPal, and Docker with GitHub Actions CI/CD to AWS.",
   },
   {
-    title: "Payments & AI services",
-    body: "Subscription checkout and multi-provider payment flows with Stripe, PayPal, JawwalPay and PalPay, and OpenAI and Anthropic APIs integrated into application workflows.",
+    title: "Operations & logistics",
+    body: "Procurement, logistics and data management for humanitarian emergency response in Gaza. That covers suppliers and quotations, deliveries, inventory, field data and reporting.",
   },
 ];
 
@@ -73,6 +73,10 @@ const skills: { group: string; items: string[] }[] = [
   {
     group: "AI services",
     items: ["OpenAI API", "Anthropic API", "LLM workflows"],
+  },
+  {
+    group: "Operations & logistics",
+    items: ["Procurement", "Supplier management", "Quotation comparison", "Delivery coordination", "Inventory management", "Documentation", "Field data collection", "Reporting"],
   },
   {
     group: "Tooling",
@@ -192,7 +196,7 @@ function HomePage({ onContact }: { onContact: () => void }) {
       >
         <div>
           <div className="eyebrow" style={{ marginBottom: 18 }}>
-            Full-Stack Software Engineer · Node.js &amp; NestJS
+            Full Stack Developer · React, Next.js, Node.js
           </div>
           <h1
             style={{
@@ -203,7 +207,7 @@ function HomePage({ onContact }: { onContact: () => void }) {
               maxWidth: "16ch",
             }}
           >
-            I build production web and mobile products end to end.
+            I build AI-powered web and mobile products.
           </h1>
           <p
             style={{
@@ -214,12 +218,11 @@ function HomePage({ onContact }: { onContact: () => void }) {
               color: "var(--text-78)",
             }}
           >
-            Full-Stack Engineer with 5+ years owning production web and mobile
-            applications end to end — from backend architecture and database
-            design through frontend implementation and deployment. Scalable REST
-            APIs in Node.js and NestJS with Prisma over PostgreSQL, real-time
-            features over WebSockets, and Docker with GitHub Actions CI/CD to
-            AWS. Delivered for clients across the UK and Europe.
+            Palestinian Full Stack Developer based in Gaza, working across two
+            worlds: building software products with React, Next.js and Node.js,
+            and supporting humanitarian operations on the ground in
+            procurement, logistics and data management. Available for remote and
+            local opportunities.
           </p>
           <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
             <button type="button" onClick={onContact} className="btn btn-primary">
@@ -280,7 +283,7 @@ function HomePage({ onContact }: { onContact: () => void }) {
 }
 
 function AboutPage() {
-  const facts = ["Arabic (native)", "English (fluent)", PHONE_DISPLAY];
+  const facts = ["Based in Gaza", "Arabic & English (fluent)", PHONE_DISPLAY];
 
   return (
     <>
@@ -306,29 +309,42 @@ function AboutPage() {
         <div>
           <div className="eyebrow">About</div>
           <h1 className="page-title">
-            Full-Stack Software Engineer — Node.js &amp; NestJS
+            Full Stack Developer — software products &amp; humanitarian
+            operations
           </h1>
           <p className="lead">
-            Full-Stack Engineer with 5+ years owning production web and mobile
-            applications end to end — from backend architecture and database
-            design through frontend implementation and deployment.
+            I&apos;m a Palestinian Full Stack Developer based in Gaza, working
+            across two worlds: building software products and supporting
+            humanitarian operations on the ground.
           </p>
           <p className="lead">
-            Strong in Node.js and NestJS: scalable REST APIs with modular
-            architecture, Prisma over PostgreSQL, secure authentication,
-            real-time features over WebSockets and event-driven processing,
-            deployed on Docker with GitHub Actions CI/CD to AWS. Frontend in
-            React, Next.js and Angular.
+            I started learning web and mobile development in 2021, began
+            freelancing in 2022 and joined a company as a developer in 2023. In
+            2025 I started working with a UK client building with React Native,
+            and in 2026 I completed TAP&apos;s programme.
           </p>
           <p className="lead">
-            I integrate OpenAI and Anthropic LLM APIs into products and build
-            daily with Claude Code and Claude Design. I work in Agile/Scrum
-            teams, bring product thinking around business and operational
-            needs, and have delivered for clients across the UK and Europe.
+            My stack is React, Next.js and React Native on the front end, with
+            Node.js, Express, TypeScript, MongoDB and PostgreSQL on the back end,
+            plus REST APIs, WebSockets, Docker, CI/CD and AWS. I build
+            AI-powered products on OpenAI and Anthropic LLM APIs, and use Claude
+            Code and Cursor daily to ship faster without compromising quality.
+          </p>
+          <p className="lead">
+            When the war began, my work expanded into humanitarian emergency
+            response. With local and international organisations in Gaza I
+            moved into operations, procurement, logistics and data management:
+            managing suppliers, comparing quotations, coordinating deliveries,
+            maintaining inventory and documentation, collecting field data and
+            preparing reports under extremely difficult conditions.
           </p>
           <p className="lead" style={{ margin: 0 }}>
-            Fully set up for remote work — 24/7 electricity and stable internet,
-            with payments through RemotePass.
+            I&apos;m looking for the right next step: a remote role in software
+            and AI-powered products, a local role with an international
+            organisation in Gaza, or any position where my technical and
+            operational experience can make a real difference. I&apos;m fully
+            set up for remote work, with 24/7 solar-powered electricity, stable
+            high-speed internet and a reliable workspace.
           </p>
           <div
             style={{ display: "flex", gap: 10, flexWrap: "wrap", marginTop: 24 }}
@@ -526,10 +542,11 @@ function ContactPage() {
             color: "var(--text-78)",
           }}
         >
-          Open to full-stack builds, real-time systems and product engagements.
-          Fully equipped for remote work with 24/7 electricity and stable
-          internet, and payments handled through RemotePass — onboarding and
-          invoicing run like any EU or US-based contractor.
+          Open to remote roles in software and AI-powered products, local roles
+          with international organisations in Gaza, and any position where
+          technical and operational experience can make a real difference.
+          Fully set up for remote work with 24/7 solar-powered electricity and
+          stable high-speed internet, and payments handled through RemotePass.
         </p>
         <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
           <a
